@@ -11,7 +11,7 @@ import com.example.demo.util.JwtUtil;
 
 @RestController
 public class HelloController {
-
+	//没有token，访问不到index
 	@RequestMapping("/index")
 	public String index() {
 		return "hello";
