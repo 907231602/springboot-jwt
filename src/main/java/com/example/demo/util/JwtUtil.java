@@ -10,6 +10,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
 public class JwtUtil {
+	//15分钟
 	private static final long EXPIRE_TIME=15*60*1000;
 	private static final String TOKEN_SECRET="d8sd8gfgf9gfs0pqmcnjs7";
 	/**
