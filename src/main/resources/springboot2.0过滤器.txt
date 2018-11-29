@@ -1,0 +1,10 @@
+springboot2.0过滤器搭建
+
+1》新建一个过滤器TokenInterceptor; implements HandlerInterceptor类;
+    重写preHandle方法,添加注解@Component
+2》新建一个配置文件的类WebConfig; implements WebMvcConfigurer类；
+     将过滤器用@Resource注入进来;重写addInterceptors方法，添加过滤接口
+     registry.addInterceptor(tokenInterceptor).addPathPatterns("/**").excludePathPatterns("/login");
+   最后添加@Configuration 
+   
+   简单粗暴
